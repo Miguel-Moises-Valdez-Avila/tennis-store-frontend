@@ -1,66 +1,100 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎾 Tennis Store — Frontend UI (Blade & CSS)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A clean and responsive **frontend interface** for a tennis e-commerce store, built with Laravel Blade templates and custom CSS. This project focuses on the UI/UX design and visual structure of the store.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🔗 Related Repositories
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+> **Backend API:** [tennis-store-api](https://github.com/Miguel-Moises-Valdez-Avila/tennis-store-api)
+> **Full Stack Version:** [tennis-store-laravel](https://github.com/Miguel-Moises-Valdez-Avila/tennis-store-laravel)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🧩 Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- ✅ **Product catalog page** — clean grid layout showcasing tennis equipment
+- ✅ **Homepage** — hero section, featured products, and promotions
+- ✅ **Product detail page** — images, description, and price display
+- ✅ **Shopping cart view** — order summary and item list UI
+- ✅ **Checkout page** — clean form layout for purchase flow
+- ✅ **Fully responsive** — mobile-first design for all screen sizes
+- ✅ **Custom CSS styling** — handcrafted styles without heavy dependencies
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Tech Stack
 
-## Laravel Sponsors
+| Layer | Technology |
+|---|---|
+| Templating | Laravel Blade |
+| Styling | CSS3 (custom) |
+| Scripting | JavaScript (ES6+) |
+| Framework | Laravel (view layer only) |
+| Version Control | Git + GitHub |
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 📸 Screenshots
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+> Add screenshots of your homepage, catalog, product detail, and cart pages here
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## ⚙️ Installation & Setup
 
-## Code of Conduct
+```bash
+# Clone the repository
+git clone https://github.com/Miguel-Moises-Valdez-Avila/tennis-store-frontend.git
+cd tennis-store-frontend
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Install dependencies
+composer install
+npm install
 
-## Security Vulnerabilities
+# Environment setup
+cp .env.example .env
+php artisan key:generate
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Start the development server
+php artisan serve
+npm run dev
+```
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🗂️ Project Structure
+
+```
+resources/
+├── views/
+│   ├── layouts/
+│   │   └── app.blade.php
+│   ├── home.blade.php
+│   ├── catalog.blade.php
+│   ├── product-detail.blade.php
+│   ├── cart.blade.php
+│   └── checkout.blade.php
+├── css/
+│   └── app.css
+└── js/
+    └── app.js
+```
+
+---
+
+## 🎨 Design Highlights
+
+- Clean and minimal layout focused on product visibility
+- Consistent color palette and typography throughout
+- Smooth hover effects and transitions on interactive elements
+- Mobile-first approach ensuring usability on all devices
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Migrate styles to Tailwind CSS
+- [ ] Connect to tennis-store-api backend
+- [ ] Add product search and filter UI
+- [ ] Implement dark mode
